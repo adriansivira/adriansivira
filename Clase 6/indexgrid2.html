@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grid 1</title>
+</head>
+<body>
+  <div class="contenedor">
+       <div class="box1"><p>1</p></div>
+       <div class="box2"><p>2</p></div>
+       <div class="box3"><p>3</p></div>
+       <div class="box4"><p>4</p></div>
+       <div class="box5"><p>5</p></div>
+       <div class="box6"><p>6</p></div>
+       <div class="box7"><p>7</p></div>
+       <div class="box8"><p>8</p></div>
+ </div>
+<style>
+    body {
+        box-sizing: border-box;
+        margin:0px;
+        padding:0px;
+    }
+    .contenedor {
+        background-color: grey;
+        height: 100vh;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 10fr 20fr 5fr 5fr 10fr 1fr ;
+        grid-template-rows: 1fr 3fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: 
+        /*"box1 box7"
+        "box2 box8"
+        "box3 box8"
+        "box4"
+        "box5"
+        "box6"*/
+        "box1 box2 box3 box4 box5 box6"
+        "box7 box8"
+    }
+    .contenedor .box1 {
+        grid-area: box1;
+        background-color: fuchsia;
+    }
+    .contenedor .box2 {
+        grid-area: box2;
+        background-color: turquoise;
+    }
+    .contenedor .box3 {
+        grid-area: box3;
+        background-color: green;
+    }
+    .contenedor .box4 {
+        grid-area: box4;
+        background-color: blueviolet;
+    }
+    .contenedor .box5 {
+        grid-area: box5;
+        background-color: darkblue;
+    }
+    .contenedor .box6 {
+        grid-area: box6;
+        background-color: aquamarine;
+    }
+    .contenedor .box7 {
+        grid-area: box7;
+        background-color: orangered;
+    }
+    .contenedor .box8 {
+        grid-area: box8;
+        background-color: coral;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: rgb(208, 242, 255);
+
+    /* display: flex;
+
+    justify-content: center;
+    align-items: center; */
+}
+
+.contenedor{
+    display: grid;
+    width: 70%;
+    height: 60%;
+
+    position: absolute;
+    right: calc(15% + 25px);
+    bottom: 20%;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-gap: 25px;
+    
+    grid-template-areas:
+        "violeta violeta gris blanco1" 
+        "blanco2 negro negro blanco1"
+    
+
+}
+
+.tweet{
+    border-radius: 15px;
+    padding: 5px;
+
+    display: grid;
+     
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr 3fr;
+
+    /* overflow: hidden; */
+
+    
+}
+
+.violeta{
+    grid-area: violeta;
+    background-color: blueviolet;
+    padding: 5px;
+
+}
+
+.gris{
+    grid-area: gris;
+    background-color: grey;
+    padding: 5px;
+}
+
+.blanco1{
+    grid-area: blanco1;
+    background-color: rgb(187, 199, 199);
+    padding: 5px;
+}
+
+.blanco2{
+    grid-area: blanco2;
+    background-color: rgb(187, 199, 199);
+    padding: 5px;
+}
+
+.negro{
+    grid-area: negro;
+    background-color: black;
+    padding: 5px;
+}
+
+p{
+
+    width: 100%;
+    min-height: 100%;
+
+}

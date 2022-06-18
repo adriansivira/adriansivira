@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor .box {
+
+    border: 1px solid black;
+    width: 10%;
+    height: 10%;
+}
+
+.contenedor .box.red {
+    background-color: red;
+}
+.contenedor .box.green {
+    background-color: green;
+}
+.contenedor .box.orange {
+    background-color:orange;
+}
+

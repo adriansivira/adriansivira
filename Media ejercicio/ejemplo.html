@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="footer">
+            <div class="ar"></div>
+            <div class="ar"></div>
+            <div class="ar"></div>
+        </div>
+    </div>
+    <style>
+        * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+        .footer{
+        /* width: 100%; */
+        background-color: blue;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "dv dv dv"
+        ;
+    }
+    
+    
+    .ar {
+        background-color: rgb(44, 175, 55);
+        grid-area: dv;
+        
+    }
+    </style>
+</body>
+</html>

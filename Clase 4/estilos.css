@@ -1,0 +1,8 @@
+.contenedor{
+    width:  100%;
+    min-height: 300px;
+    font-size: 80px;
+    color:#722222;
+    background-color: black;
+    border: 4px solid pink;
+}

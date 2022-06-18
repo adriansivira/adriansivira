@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.general {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 2fr 1fr;
+}
+
+.logo div {
+    background-color: purple;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100%;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px;
+    
+}
+
+
+.general .medio {
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "mn"
+    ;
+}
+
+.medio main {
+    background-color: rgb(41, 134, 221);
+    grid-area: mn;
+}
+
+.footer{
+    width: 100%; 
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "dv1 dv2 dv3"
+    ;
+}
+
+
+.ar {
+    background-color: rgb(44, 175, 55);
+    grid-area: dv1;
+    
+}
+.ar2 {
+    background-color: rgb(44, 175, 55);
+    grid-area: dv2;
+    
+}
+.ar3 {
+    background-color: rgb(44, 175, 55);
+    grid-area: dv3;
+    
+}
+
+@media (max-width: 900px) {
+    .general {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 3fr 2fr;
+        grid-template-areas: 
+        "logo2"
+        "caja2"
+        "mn"
+        "foo";
+    }
+
+    .titulo {
+        grid-area: logo2;
+    }
+
+    .logo div {
+       grid-area: caja2;
+    }
+
+    .footer {
+        grid-area: foo;
+    }
+
+    .logo {
+        /* height: 100px; */
+        gap: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 50px;
+        grid-template-areas: 
+        "lg lg lg lg"
+        "cj1 cj2 cj3 cj4"
+
+        ;
+    }
+
+    h1{
+        grid-area: lg;
+    }
+    .logo .caja1 {
+        grid-area: cj1;
+    }
+    .logo .caja2 {
+        grid-area: cj2;
+    }
+    .logo .caja3 {
+        grid-area: cj3;
+    }
+    .logo .caja4 {
+        grid-area: cj4;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "dv1 dv2"
+        "dv3 none";
+
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .general {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+
+    }
+    
+    .logo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "lg lg"
+        "cj1 cj2"
+        "cj3 cj4"
+    
+            ;
+        }
+    
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "dv1"
+        "dv2"
+        "dv3";
+    }
+    
+}
+
+

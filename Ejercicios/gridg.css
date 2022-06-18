@@ -1,0 +1,95 @@
+ *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-size: 8px;
+ }
+
+ .container {
+     width: 100vw;
+     height: 100vh;
+     background-color: #e3e3e3;
+     padding: 100px;
+     display: grid;
+     gap: 15px;
+     grid-template-columns: repeat (4,1fr);
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas: 
+     "c1 c1 c2 c3"
+     "c4 c4 c4 c3";
+ }
+
+ .container img {
+     height: 50px;
+     border-radius: 50px;
+ }
+
+ .container .imgtext {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     grid-area: im;
+ }
+
+ .high {
+     display: flex;
+     flex-direction: column;
+     margin-left: 20px;
+ }
+
+ p {
+     padding-top: 20px;
+     grid-area: p;
+ }
+
+ .container h2 {
+     padding-top: 20px;
+     grid-area: h2;
+ }
+
+ .caja1 {
+     background-color: rgb(98, 21, 169);
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+     grid-area: c1;
+ }
+ .caja2 {
+     background-color: rgb(72, 69, 77);
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+     grid-area: c2;
+ }
+ .caja3 {
+     background-color: rgb(245, 245, 245);
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+     grid-area: c3;
+ }
+ .caja4 {
+     background-color: rgb(255, 255, 255);
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+     grid-area: c4;
+ }
+ .caja5 {
+     background-color: rgb(4, 3, 4);
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+     grid-area: c5;
+ }
+
+ .gc {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 2fr 3fr;
+     grid-template-areas:
+     "im"
+     "h2"
+     "p";
+ }
+
